@@ -1,0 +1,10 @@
+name = "tabelacoopex"
+main = "worker.js"
+compatibility_date = "2026-07-08"
+
+# Depois de criar o D1, coloque o database_id real aqui se for usar Wrangler.
+# Pelo painel da Cloudflare, basta criar Binding com variable name DB.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "coopex_tabela"
+# database_id = "COLE_AQUI_O_DATABASE_ID"
