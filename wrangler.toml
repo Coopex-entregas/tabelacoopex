@@ -7,4 +7,4 @@ compatibility_date = "2026-07-08"
 # [[d1_databases]]
 # binding = "DB"
 # database_name = "coopex_tabela"
-# database_id = "COLE_AQUI_O_DATABASE_ID"
+# database_id = b1489acb-aa9c-413e-b46d-e028f9c07bbf
