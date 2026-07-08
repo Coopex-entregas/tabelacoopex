@@ -333,6 +333,178 @@ html,body{height:100%;overflow-x:hidden}
   body.keyboard-open .resultado .hint{font-size:11px!important}
 }
 
+
+/* ===== OBSERVAÇÕES, ORIGEM FIXA E TERMOS DO CLIENTE ===== */
+.cliente-page{
+  height:auto!important;
+  min-height:var(--vvh)!important;
+  overflow-x:hidden!important;
+  overflow-y:visible!important;
+}
+@media (min-width: 981px){
+  .cliente-page{overflow-x:hidden!important;overflow-y:visible!important}
+}
+.origem-fixa-box{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  margin-top:9px;
+  padding:9px 10px;
+  border-radius:14px;
+  background:#eef4ff;
+  border:1px solid #d8e6ff;
+  color:#073b9e;
+  font-size:12.5px;
+  line-height:1.35;
+  font-weight:800;
+}
+.origem-fixa-box input{
+  width:18px!important;
+  height:18px!important;
+  min-width:18px;
+  margin:0;
+  accent-color:#064bd8;
+  box-shadow:none!important;
+}
+.origem-fixa-box span small{
+  display:block;
+  color:#476aa8;
+  font-weight:700;
+  margin-top:2px;
+}
+.aviso-cliente-card{
+  margin-top:14px;
+  padding:13px 14px;
+  border-radius:18px;
+  background:#f4f8ff;
+  border:1px solid #cfe0ff;
+  color:#163b73;
+  font-size:13px;
+  line-height:1.45;
+  font-weight:750;
+}
+.aviso-cliente-card strong{color:#004aad}
+.links-termos-cliente{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:12px;
+}
+.links-termos-cliente a{
+  text-decoration:none;
+  border-radius:999px;
+  padding:9px 12px;
+  font-size:12.5px;
+  font-weight:950;
+  color:#064bd8;
+  background:#eef4ff;
+  border:1px solid #c7d7fe;
+}
+.links-termos-cliente a:hover{background:#dbeafe}
+.termos-cliente{
+  background:linear-gradient(180deg,#052b84,#064bd8);
+  color:#fff;
+  padding:34px 0 42px;
+  position:relative;
+  z-index:3;
+}
+.termos-wrap{
+  width:min(1180px,calc(100% - 28px));
+  margin:0 auto;
+}
+.termos-head{
+  text-align:center;
+  margin-bottom:20px;
+}
+.termos-head h2{
+  margin:0;
+  font-size:clamp(25px,3vw,38px);
+  font-weight:1000;
+  letter-spacing:-.03em;
+}
+.termos-head p{
+  margin:10px auto 0;
+  max-width:780px;
+  color:rgba(255,255,255,.9);
+  line-height:1.55;
+  font-size:14px;
+}
+.termos-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  align-items:start;
+}
+.termo-box{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+.termo-box h3{
+  margin:0 0 10px;
+  font-size:20px;
+  font-weight:1000;
+}
+.termo-box p,.termo-box li{
+  color:rgba(255,255,255,.94);
+  font-size:14px;
+  line-height:1.55;
+}
+.termo-box ul,.termo-box ol{
+  margin:10px 0 0;
+  padding-left:20px;
+}
+.termo-destaque{
+  background:#fff;
+  color:#073b9e;
+  border-radius:18px;
+  padding:14px;
+  font-size:14px;
+  font-weight:850;
+  line-height:1.5;
+  margin-top:12px;
+}
+.termo-destaque strong{color:#004aad}
+.termo-box details{
+  margin-top:12px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.20);
+  border-radius:16px;
+  padding:12px 14px;
+}
+.termo-box summary{
+  cursor:pointer;
+  font-weight:1000;
+  color:#fff;
+}
+.politica-texto{
+  margin-top:12px;
+  max-height:460px;
+  overflow:auto;
+  padding:12px;
+  border-radius:12px;
+  background:rgba(0,0,0,.16);
+  color:rgba(255,255,255,.94);
+  font-size:13px;
+  line-height:1.55;
+  white-space:pre-wrap;
+}
+@media(max-width:900px){
+  .termos-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .origem-fixa-box{font-size:11.5px;padding:8px;margin-top:7px}
+  .aviso-cliente-card{font-size:12px;padding:11px 12px;border-radius:16px}
+  .links-termos-cliente a{width:100%;text-align:center}
+  .termos-cliente{padding:26px 0 34px}
+  .termo-box{padding:15px;border-radius:18px}
+  .termo-box h3{font-size:18px}
+  .politica-texto{max-height:360px}
+}
+
 </style>
 <script id="dados-embutidos" type="application/json">{"schema":"coopex-rotas-v7","locais":[{"id":"extremoz_alto_da_bela_vista","nome":"Alto da Bela Vista","cidade":"Extremoz","label":"Alto da Bela Vista - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_alto_extremoz","nome":"Alto Extremoz","cidade":"Extremoz","label":"Alto Extremoz - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_araca","nome":"Araçá","cidade":"Extremoz","label":"Araçá - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_barra_do_rio","nome":"Barra do Rio","cidade":"Extremoz","label":"Barra do Rio - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_barreiros","nome":"Barreiros","cidade":"Extremoz","label":"Barreiros - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_barro_vermelho","nome":"Barro Vermelho","cidade":"Extremoz","label":"Barro Vermelho - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_boca_da_ilha","nome":"Boca da Ilha","cidade":"Extremoz","label":"Boca da Ilha - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_campinas","nome":"Campinas","cidade":"Extremoz","label":"Campinas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_capim","nome":"Capim","cidade":"Extremoz","label":"Capim - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_carao","nome":"Carão","cidade":"Extremoz","label":"Carão - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_central_parque_i","nome":"Central Parque I","cidade":"Extremoz","label":"Central Parque I - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_central_parque_ii","nome":"Central Parque II","cidade":"Extremoz","label":"Central Parque II - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_central_parque_iii","nome":"Central Parque III","cidade":"Extremoz","label":"Central Parque III - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_centro","nome":"Centro","cidade":"Extremoz","label":"Centro - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_comum","nome":"Comum","cidade":"Extremoz","label":"Comum - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_contendas","nome":"Contendas","cidade":"Extremoz","label":"Contendas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_el_shadai","nome":"El-Shadai","cidade":"Extremoz","label":"El-Shadai - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_estivas","nome":"Estivas","cidade":"Extremoz","label":"Estivas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_estrela_do_mar","nome":"Estrela do Mar","cidade":"Extremoz","label":"Estrela do Mar - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_genipabu","nome":"Genipabu","cidade":"Extremoz","label":"Genipabu - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_gracandu","nome":"Graçandu","cidade":"Extremoz","label":"Graçandu - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_grutas","nome":"Grutas","cidade":"Extremoz","label":"Grutas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_imbiribeira","nome":"Imbiribeira","cidade":"Extremoz","label":"Imbiribeira - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_ira_iraque","nome":"Irã/Iraque","cidade":"Extremoz","label":"Irã/Iraque - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_jardins_de_extremoz","nome":"Jardins de Extremoz","cidade":"Extremoz","label":"Jardins de Extremoz - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_km_23","nome":"Km 23","cidade":"Extremoz","label":"Km 23 - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_malvinas","nome":"Malvinas","cidade":"Extremoz","label":"Malvinas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_moinho_dos_ventos","nome":"Moinho dos Ventos","cidade":"Extremoz","label":"Moinho dos Ventos - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_murici","nome":"Murici","cidade":"Extremoz","label":"Murici - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_nova_extremoz","nome":"Nova Extremoz","cidade":"Extremoz","label":"Nova Extremoz - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_novo_horizonte","nome":"Novo Horizonte","cidade":"Extremoz","label":"Novo Horizonte - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_parque_das_flores","nome":"Parque das Flores","cidade":"Extremoz","label":"Parque das Flores - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_parque_das_jaqueiras","nome":"Parque das Jaqueiras","cidade":"Extremoz","label":"Parque das Jaqueiras - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_parque_dos_servidores","nome":"Parque dos Servidores","cidade":"Extremoz","label":"Parque dos Servidores - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_passagem_da_vila","nome":"Passagem da Vila","cidade":"Extremoz","label":"Passagem da Vila - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_pedrinhas","nome":"Pedrinhas","cidade":"Extremoz","label":"Pedrinhas - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_pitangui","nome":"Pitangui","cidade":"Extremoz","label":"Pitangui - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_redinha_nova","nome":"Redinha Nova","cidade":"Extremoz","label":"Redinha Nova - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_renascer","nome":"Renascer","cidade":"Extremoz","label":"Renascer - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_santa_maria","nome":"Santa Maria","cidade":"Extremoz","label":"Santa Maria - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_santa_rita","nome":"Santa Rita","cidade":"Extremoz","label":"Santa Rita - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_sao_miguel_arcanjo","nome":"São Miguel Arcanjo","cidade":"Extremoz","label":"São Miguel Arcanjo - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_simao","nome":"Simão","cidade":"Extremoz","label":"Simão - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_sport_clube_i","nome":"Sport Clube I","cidade":"Extremoz","label":"Sport Clube I - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_vila_de_fatima","nome":"Vila de Fátima","cidade":"Extremoz","label":"Vila de Fátima - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"extremoz_vila_sao_sebastiao","nome":"Vila São Sebastião","cidade":"Extremoz","label":"Vila São Sebastião - Extremoz","aliases":["estremos","extremos","extremoz","estremos rn","extremos rn"]},{"id":"macaiba_alfredo_mesquita","nome":"Alfredo Mesquita","cidade":"Macaíba","label":"Alfredo Mesquita - Macaíba","aliases":[]},{"id":"macaiba_area_rural_de_macaiba","nome":"Área Rural de Macaíba","cidade":"Macaíba","label":"Área Rural de Macaíba - Macaíba","aliases":[]},{"id":"macaiba_augusto_severo","nome":"Augusto Severo","cidade":"Macaíba","label":"Augusto Severo - Macaíba","aliases":[]},{"id":"macaiba_auta_de_souza","nome":"Auta de Souza","cidade":"Macaíba","label":"Auta de Souza - Macaíba","aliases":[]},{"id":"macaiba_bela_macaiba","nome":"Bela Macaíba","cidade":"Macaíba","label":"Bela Macaíba - Macaíba","aliases":[]},{"id":"macaiba_cajazeiras","nome":"Cajazeiras","cidade":"Macaíba","label":"Cajazeiras - Macaíba","aliases":[]},{"id":"macaiba_campinas","nome":"Campinas","cidade":"Macaíba","label":"Campinas - Macaíba","aliases":[]},{"id":"macaiba_campo_da_mangueira","nome":"Campo da Mangueira","cidade":"Macaíba","label":"Campo da Mangueira - Macaíba","aliases":[]},{"id":"macaiba_campo_da_santa_cruz","nome":"Campo da Santa Cruz","cidade":"Macaíba","label":"Campo da Santa Cruz - Macaíba","aliases":[]},{"id":"macaiba_cana_brava","nome":"Cana Brava","cidade":"Macaíba","label":"Cana Brava - Macaíba","aliases":[]},{"id":"macaiba_centro","nome":"Centro","cidade":"Macaíba","label":"Centro - Macaíba","aliases":[]},{"id":"macaiba_fabricio_pedroza","nome":"Fabrício Pedroza","cidade":"Macaíba","label":"Fabrício Pedroza - Macaíba","aliases":[]},{"id":"macaiba_ferreiro_torto","nome":"Ferreiro Torto","cidade":"Macaíba","label":"Ferreiro Torto - Macaíba","aliases":[]},{"id":"macaiba_lagoa_das_pedras","nome":"Lagoa das Pedras","cidade":"Macaíba","label":"Lagoa das Pedras - Macaíba","aliases":[]},{"id":"macaiba_lagoa_de_santo_antonio","nome":"Lagoa de Santo Antônio","cidade":"Macaíba","label":"Lagoa de Santo Antônio - Macaíba","aliases":[]},{"id":"macaiba_lagoa_grande","nome":"Lagoa Grande","cidade":"Macaíba","label":"Lagoa Grande - Macaíba","aliases":[]},{"id":"macaiba_liberdade","nome":"Liberdade","cidade":"Macaíba","label":"Liberdade - Macaíba","aliases":[]},{"id":"macaiba_mangabeira","nome":"Mangabeira","cidade":"Macaíba","label":"Mangabeira - Macaíba","aliases":[]},{"id":"macaiba_pe_do_galo","nome":"Pé do Galo","cidade":"Macaíba","label":"Pé do Galo - Macaíba","aliases":[]},{"id":"macaiba_sao_jose","nome":"São José","cidade":"Macaíba","label":"São José - Macaíba","aliases":[]},{"id":"macaiba_tavares_de_lira","nome":"Tavares de Lira","cidade":"Macaíba","label":"Tavares de Lira - Macaíba","aliases":[]},{"id":"macaiba_trairas","nome":"Traíras","cidade":"Macaíba","label":"Traíras - Macaíba","aliases":[]},{"id":"macaiba_vilar","nome":"Vilar","cidade":"Macaíba","label":"Vilar - Macaíba","aliases":[]},{"id":"natal_alecrim","nome":"Alecrim","cidade":"Natal","label":"Alecrim - Natal","aliases":[]},{"id":"natal_areia_preta","nome":"Areia Preta","cidade":"Natal","label":"Areia Preta - Natal","aliases":[]},{"id":"natal_barro_vermelho","nome":"Barro Vermelho","cidade":"Natal","label":"Barro Vermelho - Natal","aliases":[]},{"id":"natal_bom_pastor","nome":"Bom Pastor","cidade":"Natal","label":"Bom Pastor - Natal","aliases":[]},{"id":"natal_candelaria","nome":"Candelária","cidade":"Natal","label":"Candelária - Natal","aliases":[]},{"id":"natal_capim_macio","nome":"Capim Macio","cidade":"Natal","label":"Capim Macio - Natal","aliases":[]},{"id":"natal_cidade_alta","nome":"Cidade Alta","cidade":"Natal","label":"Cidade Alta - Natal","aliases":[]},{"id":"natal_cidade_da_esperanca","nome":"Cidade da Esperança","cidade":"Natal","label":"Cidade da Esperança - Natal","aliases":[]},{"id":"natal_cidade_nova","nome":"Cidade Nova","cidade":"Natal","label":"Cidade Nova - Natal","aliases":[]},{"id":"natal_dix_sept_rosado","nome":"Dix-Sept Rosado","cidade":"Natal","label":"Dix-Sept Rosado - Natal","aliases":[]},{"id":"natal_felipe_camarao","nome":"Felipe Camarão","cidade":"Natal","label":"Felipe Camarão - Natal","aliases":[]},{"id":"natal_guarapes","nome":"Guarapes","cidade":"Natal","label":"Guarapes - Natal","aliases":[]},{"id":"natal_igapo","nome":"Igapó","cidade":"Natal","label":"Igapó - Natal","aliases":[]},{"id":"natal_lagoa_azul","nome":"Lagoa Azul","cidade":"Natal","label":"Lagoa Azul - Natal","aliases":[]},{"id":"natal_lagoa_nova","nome":"Lagoa Nova","cidade":"Natal","label":"Lagoa Nova - Natal","aliases":[]},{"id":"natal_lagoa_seca","nome":"Lagoa Seca","cidade":"Natal","label":"Lagoa Seca - Natal","aliases":[]},{"id":"natal_mae_luiza","nome":"Mãe Luíza","cidade":"Natal","label":"Mãe Luíza - Natal","aliases":[]},{"id":"natal_neopolis","nome":"Neópolis","cidade":"Natal","label":"Neópolis - Natal","aliases":[]},{"id":"natal_nordeste","nome":"Nordeste","cidade":"Natal","label":"Nordeste - Natal","aliases":[]},{"id":"natal_nossa_senhora_da_apresentacao","nome":"Nossa Senhora da Apresentação","cidade":"Natal","label":"Nossa Senhora da Apresentação - Natal","aliases":[]},{"id":"natal_nossa_senhora_de_nazare","nome":"Nossa Senhora de Nazaré","cidade":"Natal","label":"Nossa Senhora de Nazaré - Natal","aliases":[]},{"id":"natal_nova_descoberta","nome":"Nova Descoberta","cidade":"Natal","label":"Nova Descoberta - Natal","aliases":[]},{"id":"natal_pajucara","nome":"Pajuçara","cidade":"Natal","label":"Pajuçara - Natal","aliases":[]},{"id":"natal_petropolis","nome":"Petrópolis","cidade":"Natal","label":"Petrópolis - Natal","aliases":[]},{"id":"natal_pitimbu","nome":"Pitimbu","cidade":"Natal","label":"Pitimbu - Natal","aliases":[]},{"id":"natal_planalto","nome":"Planalto","cidade":"Natal","label":"Planalto - Natal","aliases":[]},{"id":"natal_ponta_negra","nome":"Ponta Negra","cidade":"Natal","label":"Ponta Negra - Natal","aliases":[]},{"id":"natal_potengi","nome":"Potengi","cidade":"Natal","label":"Potengi - Natal","aliases":[]},{"id":"natal_praia_do_meio","nome":"Praia do Meio","cidade":"Natal","label":"Praia do Meio - Natal","aliases":[]},{"id":"natal_quintas","nome":"Quintas","cidade":"Natal","label":"Quintas - Natal","aliases":[]},{"id":"natal_redinha","nome":"Redinha","cidade":"Natal","label":"Redinha - Natal","aliases":[]},{"id":"natal_ribeira","nome":"Ribeira","cidade":"Natal","label":"Ribeira - Natal","aliases":[]},{"id":"natal_rocas","nome":"Rocas","cidade":"Natal","label":"Rocas - Natal","aliases":[]},{"id":"natal_salinas","nome":"Salinas","cidade":"Natal","label":"Salinas - Natal","aliases":[]},{"id":"natal_santos_reis","nome":"Santos Reis","cidade":"Natal","label":"Santos Reis - Natal","aliases":[]},{"id":"natal_tirol","nome":"Tirol","cidade":"Natal","label":"Tirol - Natal","aliases":[]},{"id":"nisia_floresta_alcacuz","nome":"Alcaçuz","cidade":"Nísia Floresta","label":"Alcaçuz - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_barra_de_tabatinga","nome":"Barra de Tabatinga","cidade":"Nísia Floresta","label":"Barra de Tabatinga - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_barreta","nome":"Barreta","cidade":"Nísia Floresta","label":"Barreta - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_boa_agua","nome":"Boa Água","cidade":"Nísia Floresta","label":"Boa Água - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_buzios","nome":"Búzios","cidade":"Nísia Floresta","label":"Búzios - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_campo_de_santana","nome":"Campo de Santana","cidade":"Nísia Floresta","label":"Campo de Santana - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_camurupim","nome":"Camurupim","cidade":"Nísia Floresta","label":"Camurupim - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_centro","nome":"Centro","cidade":"Nísia Floresta","label":"Centro - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_colonia_de_pium","nome":"Colônia de Pium","cidade":"Nísia Floresta","label":"Colônia de Pium - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_currais","nome":"Currais","cidade":"Nísia Floresta","label":"Currais - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_lagoa_do_bonfim","nome":"Lagoa do Bonfim","cidade":"Nísia Floresta","label":"Lagoa do Bonfim - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_morrinhos","nome":"Morrinhos","cidade":"Nísia Floresta","label":"Morrinhos - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_pirangi_do_sul","nome":"Pirangi do Sul","cidade":"Nísia Floresta","label":"Pirangi do Sul - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_porto","nome":"Porto","cidade":"Nísia Floresta","label":"Porto - Nísia Floresta","aliases":[]},{"id":"nisia_floresta_povoado_de_pium","nome":"Povoado de Pium","cidade":"Nísia Floresta","label":"Povoado de Pium - Nísia Floresta","aliases":[]},{"id":"parnamirim_area_de_expansao","nome":"Área de Expansão","cidade":"Parnamirim","label":"Área de Expansão - Parnamirim","aliases":[]},{"id":"parnamirim_area_militar","nome":"Área Militar","cidade":"Parnamirim","label":"Área Militar - Parnamirim","aliases":[]},{"id":"parnamirim_bela_parnamirim","nome":"Bela Parnamirim","cidade":"Parnamirim","label":"Bela Parnamirim - Parnamirim","aliases":[]},{"id":"parnamirim_boa_esperanca","nome":"Boa Esperança","cidade":"Parnamirim","label":"Boa Esperança - Parnamirim","aliases":[]},{"id":"parnamirim_cajupiranga","nome":"Cajupiranga","cidade":"Parnamirim","label":"Cajupiranga - Parnamirim","aliases":[]},{"id":"parnamirim_centro","nome":"Centro","cidade":"Parnamirim","label":"Centro - Parnamirim","aliases":[]},{"id":"parnamirim_cidade_nova","nome":"Cidade Nova","cidade":"Parnamirim","label":"Cidade Nova - Parnamirim","aliases":[]},{"id":"parnamirim_cohabinal","nome":"Cohabinal","cidade":"Parnamirim","label":"Cohabinal - Parnamirim","aliases":[]},{"id":"parnamirim_cotovelo","nome":"Cotovelo","cidade":"Parnamirim","label":"Cotovelo - Parnamirim","aliases":[]},{"id":"parnamirim_emaus","nome":"Emaús","cidade":"Parnamirim","label":"Emaús - Parnamirim","aliases":[]},{"id":"parnamirim_jardim_planalto","nome":"Jardim Planalto","cidade":"Parnamirim","label":"Jardim Planalto - Parnamirim","aliases":[]},{"id":"parnamirim_liberdade","nome":"Liberdade","cidade":"Parnamirim","label":"Liberdade - Parnamirim","aliases":[]},{"id":"parnamirim_monte_castelo","nome":"Monte Castelo","cidade":"Parnamirim","label":"Monte Castelo - Parnamirim","aliases":[]},{"id":"parnamirim_nova_esperanca","nome":"Nova Esperança","cidade":"Parnamirim","label":"Nova Esperança - Parnamirim","aliases":[]},{"id":"parnamirim_nova_parnamirim","nome":"Nova Parnamirim","cidade":"Parnamirim","label":"Nova Parnamirim - Parnamirim","aliases":[]},{"id":"parnamirim_parque_das_arvores","nome":"Parque das Árvores","cidade":"Parnamirim","label":"Parque das Árvores - Parnamirim","aliases":[]},{"id":"parnamirim_parque_das_nacoes","nome":"Parque das Nações","cidade":"Parnamirim","label":"Parque das Nações - Parnamirim","aliases":[]},{"id":"parnamirim_parque_de_exposicoes","nome":"Parque de Exposições","cidade":"Parnamirim","label":"Parque de Exposições - Parnamirim","aliases":[]},{"id":"parnamirim_parque_do_jiqui","nome":"Parque do Jiqui","cidade":"Parnamirim","label":"Parque do Jiqui - Parnamirim","aliases":[]},{"id":"parnamirim_passagem_de_areia","nome":"Passagem de Areia","cidade":"Parnamirim","label":"Passagem de Areia - Parnamirim","aliases":[]},{"id":"parnamirim_pirangi_do_norte","nome":"Pirangi do Norte","cidade":"Parnamirim","label":"Pirangi do Norte - Parnamirim","aliases":[]},{"id":"parnamirim_pium","nome":"Pium","cidade":"Parnamirim","label":"Pium - Parnamirim","aliases":[]},{"id":"parnamirim_rosa_dos_ventos","nome":"Rosa dos Ventos","cidade":"Parnamirim","label":"Rosa dos Ventos - Parnamirim","aliases":[]},{"id":"parnamirim_santa_tereza","nome":"Santa Tereza","cidade":"Parnamirim","label":"Santa Tereza - Parnamirim","aliases":[]},{"id":"parnamirim_santos_reis","nome":"Santos Reis","cidade":"Parnamirim","label":"Santos Reis - Parnamirim","aliases":[]},{"id":"parnamirim_vale_do_sol","nome":"Vale do Sol","cidade":"Parnamirim","label":"Vale do Sol - Parnamirim","aliases":[]},{"id":"parnamirim_vida_nova","nome":"Vida Nova","cidade":"Parnamirim","label":"Vida Nova - Parnamirim","aliases":[]},{"id":"sao_goncalo_do_amarante_alagadico_grande","nome":"Alagadiço Grande","cidade":"São Gonçalo do Amarante","label":"Alagadiço Grande - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_amarante","nome":"Amarante","cidade":"São Gonçalo do Amarante","label":"Amarante - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_arvoredo","nome":"Arvoredo","cidade":"São Gonçalo do Amarante","label":"Arvoredo - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_barro_duro","nome":"Barro Duro","cidade":"São Gonçalo do Amarante","label":"Barro Duro - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_bela_vista","nome":"Bela Vista","cidade":"São Gonçalo do Amarante","label":"Bela Vista - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_belo_horizonte","nome":"Belo Horizonte","cidade":"São Gonçalo do Amarante","label":"Belo Horizonte - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_california","nome":"Califórnia","cidade":"São Gonçalo do Amarante","label":"Califórnia - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_campina","nome":"Campina","cidade":"São Gonçalo do Amarante","label":"Campina - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_centro","nome":"Centro","cidade":"São Gonçalo do Amarante","label":"Centro - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_coqueiros","nome":"Coqueiros","cidade":"São Gonçalo do Amarante","label":"Coqueiros - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_genipapo","nome":"Genipapo","cidade":"São Gonçalo do Amarante","label":"Genipapo - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_golandim","nome":"Golandim","cidade":"São Gonçalo do Amarante","label":"Golandim - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_guajiru","nome":"Guajiru","cidade":"São Gonçalo do Amarante","label":"Guajiru - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_guanduba","nome":"Guanduba","cidade":"São Gonçalo do Amarante","label":"Guanduba - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_igreja_nova","nome":"Igreja Nova","cidade":"São Gonçalo do Amarante","label":"Igreja Nova - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_jacarau","nome":"Jacaraú","cidade":"São Gonçalo do Amarante","label":"Jacaraú - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_jacare_mirim","nome":"Jacaré-Mirim","cidade":"São Gonçalo do Amarante","label":"Jacaré-Mirim - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_jacobina","nome":"Jacobina","cidade":"São Gonçalo do Amarante","label":"Jacobina - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_jardim_lola","nome":"Jardim Lola","cidade":"São Gonçalo do Amarante","label":"Jardim Lola - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_jardins","nome":"Jardins","cidade":"São Gonçalo do Amarante","label":"Jardins - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_ladeira_grande","nome":"Ladeira Grande","cidade":"São Gonçalo do Amarante","label":"Ladeira Grande - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_macaranduba","nome":"Maçaranduba","cidade":"São Gonçalo do Amarante","label":"Maçaranduba - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_milharada","nome":"Milharada","cidade":"São Gonçalo do Amarante","label":"Milharada - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_novo_amarante","nome":"Novo Amarante","cidade":"São Gonçalo do Amarante","label":"Novo Amarante - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_oiteiros","nome":"Oiteiros","cidade":"São Gonçalo do Amarante","label":"Oiteiros - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_olho_d_agua","nome":"Olho D'Água","cidade":"São Gonçalo do Amarante","label":"Olho D'Água - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_olho_d_agua_do_chapeu","nome":"Olho d'Água do Chapéu","cidade":"São Gonçalo do Amarante","label":"Olho d'Água do Chapéu - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_pajucara","nome":"Pajuçara","cidade":"São Gonçalo do Amarante","label":"Pajuçara - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_parque_dos_ipes","nome":"Parque dos Ipês","cidade":"São Gonçalo do Amarante","label":"Parque dos Ipês - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_poco_de_pedra","nome":"Poço de Pedra","cidade":"São Gonçalo do Amarante","label":"Poço de Pedra - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_regomoleiro","nome":"Regomoleiro","cidade":"São Gonçalo do Amarante","label":"Regomoleiro - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_riacho_do_meio","nome":"Riacho do Meio","cidade":"São Gonçalo do Amarante","label":"Riacho do Meio - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_rio_da_prata","nome":"Rio da Prata","cidade":"São Gonçalo do Amarante","label":"Rio da Prata - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_santa_terezinha","nome":"Santa Terezinha","cidade":"São Gonçalo do Amarante","label":"Santa Terezinha - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_santo_antonio_do_potengi","nome":"Santo Antônio do Potengi","cidade":"São Gonçalo do Amarante","label":"Santo Antônio do Potengi - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_serrinha_de_baixo","nome":"Serrinha de Baixo","cidade":"São Gonçalo do Amarante","label":"Serrinha de Baixo - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_serrinha_de_cima","nome":"Serrinha de Cima","cidade":"São Gonçalo do Amarante","label":"Serrinha de Cima - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_serrinha_do_meio","nome":"Serrinha do Meio","cidade":"São Gonçalo do Amarante","label":"Serrinha do Meio - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_tapara","nome":"Tapará","cidade":"São Gonçalo do Amarante","label":"Tapará - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_uruacu","nome":"Uruaçu","cidade":"São Gonçalo do Amarante","label":"Uruaçu - São Gonçalo do Amarante","aliases":[]},{"id":"sao_goncalo_do_amarante_utinga","nome":"Utinga","cidade":"São Gonçalo do Amarante","label":"Utinga - São Gonçalo do Amarante","aliases":[]}],"rotas":{"natal_candelaria|natal_igapo":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_igapo":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_igapo|natal_lagoa_nova":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_igapo|natal_neopolis":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_igapo|natal_ponta_negra":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_igapo":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_igapo|natal_tirol":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_igapo|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_lagoa_azul":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_lagoa_azul":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_azul|natal_lagoa_nova":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_azul|natal_neopolis":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_azul|natal_ponta_negra":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_lagoa_azul":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_azul|natal_tirol":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_azul|parnamirim_nova_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_nossa_senhora_da_apresentacao":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_nossa_senhora_da_apresentacao":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_nossa_senhora_da_apresentacao":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_neopolis|natal_nossa_senhora_da_apresentacao":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_nossa_senhora_da_apresentacao|natal_ponta_negra":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_nossa_senhora_da_apresentacao":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_nossa_senhora_da_apresentacao|natal_tirol":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_nossa_senhora_da_apresentacao|parnamirim_nova_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_pajucara":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_pajucara":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_pajucara":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_neopolis|natal_pajucara":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_pajucara|natal_ponta_negra":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_pajucara":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_pajucara|natal_tirol":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_pajucara|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_potengi":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_potengi":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_potengi":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_neopolis|natal_potengi":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|natal_potengi":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_potengi":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_potengi|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_redinha":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_redinha":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_redinha":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_neopolis|natal_redinha":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|natal_redinha":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_redinha":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_redinha|natal_tirol":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_capim_macio":{"valor":14.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_lagoa_nova":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_ponta_negra":{"valor":15.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_areia_preta|natal_candelaria":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_mae_luiza":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_praia_do_meio":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_ribeira":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_rocas":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_santos_reis":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_cidade_nova":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_cidade_da_esperanca":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_dix_sept_rosado":{"valor":14.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_felipe_camarao":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_guarapes":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_candelaria|natal_nordeste":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_nossa_senhora_de_nazare":{"valor":14.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|natal_planalto":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_bela_parnamirim":{"valor":36.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_centro":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_cotovelo":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_emaus":{"valor":23.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_nova_parnamirim":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_pium":{"valor":25.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_rosa_dos_ventos":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"extremoz_redinha_nova|natal_candelaria":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|sao_goncalo_do_amarante_centro":{"valor":40.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|sao_goncalo_do_amarante_golandim":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|sao_goncalo_do_amarante_novo_amarante":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_candelaria|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_capim_macio|natal_capim_macio":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_neopolis":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_nova_descoberta":{"valor":14.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_pitimbu":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_ponta_negra":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_alecrim|natal_capim_macio":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_areia_preta|natal_capim_macio":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_capim_macio":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_lagoa_seca":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_petropolis":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_praia_do_meio":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_ribeira":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_rocas":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_santos_reis":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_tirol":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_bom_pastor|natal_capim_macio":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_cidade_nova":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_cidade_da_esperanca":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_dix_sept_rosado":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_nordeste":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|natal_nossa_senhora_de_nazare":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_bela_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_cajupiranga":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_centro":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_emaus":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_liberdade":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_nova_parnamirim":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_pium":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_rosa_dos_ventos":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|parnamirim_santos_reis":{"valor":30.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|natal_capim_macio":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|sao_goncalo_do_amarante_centro":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|sao_goncalo_do_amarante_golandim":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|sao_goncalo_do_amarante_novo_amarante":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"CSV embutido"},"natal_capim_macio|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_neopolis":{"valor":15.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_nova_descoberta":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_ponta_negra":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_areia_preta|natal_lagoa_nova":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_mae_luiza":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_praia_do_meio":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_ribeira":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_rocas":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_santos_reis":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_cidade_nova|natal_lagoa_nova":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_cidade_da_esperanca|natal_lagoa_nova":{"valor":15.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_dix_sept_rosado|natal_lagoa_nova":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_felipe_camarao|natal_lagoa_nova":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_guarapes|natal_lagoa_nova":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_nova|natal_nordeste":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_nossa_senhora_de_nazare":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|natal_planalto":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_cajupiranga":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_centro":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_cotovelo":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_liberdade":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_parque_do_jiqui":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_pium":{"valor":25.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_rosa_dos_ventos":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"extremoz_redinha_nova|natal_lagoa_nova":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"extremoz_malvinas|natal_lagoa_nova":{"valor":55.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|sao_goncalo_do_amarante_centro":{"valor":40.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|sao_goncalo_do_amarante_golandim":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|sao_goncalo_do_amarante_novo_amarante":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|nisia_floresta_povoado_de_pium":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_nova|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_neopolis|natal_neopolis":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_pitimbu":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_areia_preta|natal_neopolis":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_praia_do_meio":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_ribeira":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_rocas":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_tirol":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_cidade_nova|natal_neopolis":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_cidade_da_esperanca|natal_neopolis":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_dix_sept_rosado|natal_neopolis":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|natal_planalto":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_bela_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_cajupiranga":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_centro":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_emaus":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_jardim_planalto":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_liberdade":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_nova_parnamirim":{"valor":14.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_passagem_de_areia":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_pium":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_rosa_dos_ventos":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|parnamirim_santos_reis":{"valor":27.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|natal_neopolis":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|sao_goncalo_do_amarante_golandim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|sao_goncalo_do_amarante_novo_amarante":{"valor":30.0,"atualizadoEm":"CSV embutido"},"macaiba_centro|natal_neopolis":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"CSV embutido"},"natal_neopolis|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_nova_descoberta|natal_ponta_negra":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_nova_descoberta":{"valor":14.0,"atualizadoEm":"CSV embutido"},"natal_pitimbu|natal_ponta_negra":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_pitimbu":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_pitimbu|natal_tirol":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_pitimbu|parnamirim_nova_parnamirim":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|natal_ponta_negra":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_areia_preta|natal_ponta_negra":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_cidade_nova|natal_ponta_negra":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_dix_sept_rosado|natal_ponta_negra":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_felipe_camarao|natal_ponta_negra":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_nordeste|natal_ponta_negra":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_nossa_senhora_de_nazare|natal_ponta_negra":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_planalto|natal_ponta_negra":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_bela_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_centro":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_cotovelo":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_liberdade":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_nova_esperanca":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_nova_parnamirim":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_pium":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_rosa_dos_ventos":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|parnamirim_santos_reis":{"valor":30.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|natal_ponta_negra":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|sao_goncalo_do_amarante_centro":{"valor":45.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|sao_goncalo_do_amarante_golandim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|sao_goncalo_do_amarante_jardim_lola":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|sao_goncalo_do_amarante_jardins":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|sao_goncalo_do_amarante_novo_amarante":{"valor":30.0,"atualizadoEm":"CSV embutido"},"macaiba_centro|natal_ponta_negra":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|nisia_floresta_pirangi_do_sul":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_ponta_negra|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_alecrim|natal_barro_vermelho":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_alecrim|natal_tirol":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_alecrim|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_areia_preta|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_cidade_alta":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_lagoa_seca":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_petropolis":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_praia_do_meio":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_ribeira":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_rocas":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_santos_reis":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_tirol":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_barro_vermelho|natal_bom_pastor":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_cidade_nova":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_cidade_da_esperanca":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_felipe_camarao":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_nordeste":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_nossa_senhora_de_nazare":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_planalto":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|natal_quintas":{"valor":15.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_bela_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_cajupiranga":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_centro":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_cotovelo":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_emaus":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_liberdade":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_pium":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_rosa_dos_ventos":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|natal_barro_vermelho":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|sao_goncalo_do_amarante_centro":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|sao_goncalo_do_amarante_golandim":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|sao_goncalo_do_amarante_novo_amarante":{"valor":27.0,"atualizadoEm":"CSV embutido"},"macaiba_centro|natal_barro_vermelho":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"CSV embutido"},"natal_barro_vermelho|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_cidade_alta|natal_tirol":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_cidade_alta|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_lagoa_seca|natal_tirol":{"valor":13.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_lagoa_seca|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_petropolis|natal_tirol":{"valor":13.0,"atualizadoEm":"CSV embutido"},"natal_petropolis|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_praia_do_meio|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_ribeira|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_rocas|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_santos_reis|natal_tirol":{"valor":16.0,"atualizadoEm":"CSV embutido"},"natal_santos_reis|parnamirim_emaus":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|natal_tirol":{"valor":12.0,"atualizadoEm":"CSV embutido"},"natal_cidade_nova|natal_tirol":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_cidade_da_esperanca|natal_tirol":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_felipe_camarao|natal_tirol":{"valor":17.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_guarapes|natal_tirol":{"valor":22.0,"atualizadoEm":"CSV embutido"},"natal_nordeste|natal_tirol":{"valor":16.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_planalto|natal_tirol":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_bela_parnamirim":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_cajupiranga":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_centro":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_cohabinal":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_cotovelo":{"valor":30.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_emaus":{"valor":25.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_jardim_planalto":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_liberdade":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_nova_esperanca":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_pium":{"valor":25.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_rosa_dos_ventos":{"valor":35.0,"atualizadoEm":"CSV embutido"},"natal_tirol|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|natal_tirol":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_tirol|sao_goncalo_do_amarante_centro":{"valor":40.0,"atualizadoEm":"CSV embutido"},"natal_tirol|sao_goncalo_do_amarante_golandim":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|sao_goncalo_do_amarante_jardim_lola":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|sao_goncalo_do_amarante_jardins":{"valor":35.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|sao_goncalo_do_amarante_novo_amarante":{"valor":27.0,"atualizadoEm":"confirmado pela lista enviada"},"macaiba_centro|natal_tirol":{"valor":40.0,"atualizadoEm":"confirmado pela lista enviada"},"natal_tirol|nisia_floresta_pirangi_do_sul":{"valor":45.0,"atualizadoEm":"CSV embutido"},"natal_tirol|nisia_floresta_colonia_de_pium":{"valor":30.0,"atualizadoEm":"CSV embutido"},"natal_bom_pastor|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"CSV embutido"},"natal_cidade_nova|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_cidade_da_esperanca|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_dix_sept_rosado|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_felipe_camarao|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_nordeste|parnamirim_nova_parnamirim":{"valor":20.0,"atualizadoEm":"CSV embutido"},"natal_nossa_senhora_de_nazare|parnamirim_nova_parnamirim":{"valor":17.0,"atualizadoEm":"CSV embutido"},"natal_quintas|parnamirim_nova_parnamirim":{"valor":18.0,"atualizadoEm":"CSV embutido"},"parnamirim_bela_parnamirim|parnamirim_nova_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"parnamirim_centro|parnamirim_nova_parnamirim":{"valor":27.0,"atualizadoEm":"CSV embutido"},"parnamirim_cohabinal|parnamirim_nova_parnamirim":{"valor":27.0,"atualizadoEm":"CSV embutido"},"parnamirim_cotovelo|parnamirim_nova_parnamirim":{"valor":27.0,"atualizadoEm":"CSV embutido"},"parnamirim_jardim_planalto|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"parnamirim_liberdade|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_esperanca|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_nova_parnamirim":{"valor":13.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_parque_de_exposicoes":{"valor":27.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_passagem_de_areia":{"valor":35.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_pirangi_do_norte":{"valor":40.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_pium":{"valor":22.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_rosa_dos_ventos":{"valor":27.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_santa_tereza":{"valor":35.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|parnamirim_santos_reis":{"valor":22.0,"atualizadoEm":"CSV embutido"},"extremoz_redinha_nova|parnamirim_nova_parnamirim":{"valor":35.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|sao_goncalo_do_amarante_centro":{"valor":45.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|sao_goncalo_do_amarante_golandim":{"valor":30.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|sao_goncalo_do_amarante_jardim_lola":{"valor":30.0,"atualizadoEm":"CSV embutido"},"parnamirim_nova_parnamirim|sao_goncalo_do_amarante_jardins":{"valor":40.0,"atualizadoEm":"CSV embutido"},"nisia_floresta_pirangi_do_sul|parnamirim_nova_parnamirim":{"valor":45.0,"atualizadoEm":"CSV embutido"},"nisia_floresta_colonia_de_pium|parnamirim_nova_parnamirim":{"valor":30.0,"atualizadoEm":"CSV embutido"}},"sugestoes":{},"divergencias":[],"meta":{"totalLocais":188,"totalRotasComValor":360,"totalSugestoes":0,"csv":"tabela_coopex_rotas_ida_volta(1).csv","rotasConferidasNestaVersao":120,"observacaoSemValor":"Quando não houver valor cadastrado, consultar a COOPEX para confirmar o valor da rota.","exportacao":"XLSX sem sugestão; apenas valores cadastrados ou faltantes para consultar COOPEX."}}</script>
 </head>
@@ -359,6 +531,10 @@ html,body{height:100%;overflow-x:hidden}
             <label for="origem">Origem</label>
             <input id="origem" type="text" autocomplete="off" placeholder="Digite a origem">
             <div id="origemSug" class="sug hidden"></div>
+            <label class="origem-fixa-box" for="fixarOrigem">
+              <input id="fixarOrigem" type="checkbox">
+              <span>Fixar bairro</span>
+            </label>
           </div>
         </div>
 
@@ -376,11 +552,186 @@ html,body{height:100%;overflow-x:hidden}
         </div>
 
         <section id="resultado" class="resultado"></section>
+
+        <div class="aviso-cliente-card">
+          <strong>Importante:</strong> os valores apresentados referem-se exclusivamente ao serviço de
+          <strong>coleta e entrega</strong> entre os bairros informados. Para cartório, compras, bancos,
+          filas, pagamentos, espera no local ou outros serviços externos, entre em contato com a Supervisão da COOPEX.
+          <div class="links-termos-cliente">
+            <a href="#modoUsoTabela">Ver modo de usar</a>
+            <a href="#regrasEspera">Ver regras de espera</a>
+            <a href="#termosCoopex">Ver termos e responsabilidade</a>
+          </div>
+        </div>
       </section>
     </div>
   </div>
   <div class="cliente-footer">Coopex <span id="anoAtualFooter">2026</span></div>
 </main>
+
+<section id="termosCoopex" class="termos-cliente">
+  <div class="termos-wrap">
+    <div class="termos-head">
+      <h2>Modo de uso, regras de espera e termos COOPEX</h2>
+      <p>Leia as informações abaixo antes de solicitar o serviço. A tabela apresenta valores de referência para coleta e entrega por bairro. Serviços externos ou com permanência no local devem ser confirmados com a Supervisão.</p>
+    </div>
+
+    <div class="termos-grid">
+      <div id="modoUsoTabela" class="termo-box">
+        <h3>Como usar a tabela</h3>
+        <ol>
+          <li>Digite o bairro de <strong>origem</strong> e escolha uma sugestão da lista.</li>
+          <li>Digite o bairro de <strong>destino</strong> e escolha uma sugestão da lista.</li>
+          <li>O valor aparecerá quando a rota estiver cadastrada na tabela.</li>
+          <li>Se aparecer <strong>valor não cadastrado</strong>, consulte a COOPEX para confirmação.</li>
+        </ol>
+        <div class="termo-destaque">
+          Os valores da tabela são referentes ao serviço de <strong>coleta e entrega</strong>. Para cartório,
+          compras, bancos, filas, pagamentos, retirada com espera ou qualquer serviço externo, o valor deve ser
+          confirmado com a Supervisão da COOPEX.
+        </div>
+      </div>
+
+      <div id="regrasEspera" class="termo-box">
+        <h3>Regras de espera e serviços externos</h3>
+        <p>Para qualquer tipo de serviço, é necessário que o cliente, remetente, destinatário ou responsável pelo local esteja aguardando o entregador no momento combinado.</p>
+        <ul>
+          <li><strong>Taxa de espera:</strong> R$ 5,00 a cada 15 minutos de espera.</li>
+          <li><strong>Coleta e entrega simples:</strong> caso haja demora no local, o tempo poderá ser registrado e cobrado.</li>
+          <li><strong>Cartório, compras e serviços externos:</strong> há tolerância gratuita de 15 minutos. Após esse período, o tempo será marcado e cobrado conforme a taxa de espera.</li>
+          <li><strong>Comprovação:</strong> a espera poderá ser registrada com foto do local, ficha ou senha de atendimento, comprovante de chegada, informação enviada pelo estabelecimento ou outro registro disponível.</li>
+          <li><strong>Quando não houver ficha ou senha:</strong> será considerado o horário de chegada do entregador ao local, conforme registro operacional e confirmação com a Supervisão.</li>
+        </ul>
+        <div class="termo-destaque">
+          A tolerância de 15 minutos não transforma o serviço externo em preço fixo. Após a tolerância,
+          a espera passa a ser cobrada por tempo.
+        </div>
+      </div>
+
+      <div class="termo-box">
+        <h3>Termos de uso da tabela</h3>
+        <p>Esta tabela serve como consulta rápida de valores para rotas cadastradas. O valor exibido considera a origem e o destino informados pelo cliente, podendo haver necessidade de confirmação quando o serviço envolver condições especiais.</p>
+        <ul>
+          <li>Endereço incorreto, ausência do destinatário ou alteração de rota poderá gerar cobrança adicional.</li>
+          <li>Produtos incompatíveis com transporte em motocicleta poderão ser recusados por segurança.</li>
+          <li>Serviços não enquadrados como coleta e entrega simples dependem de orçamento ou confirmação da Supervisão.</li>
+          <li>Ao utilizar a tabela e solicitar o serviço, o cliente declara estar ciente das regras de atendimento, espera e responsabilidade.</li>
+        </ul>
+      </div>
+
+      <div class="termo-box">
+        <h3>Política de Privacidade, Segurança e Responsabilidade</h3>
+        <p>A COOPEX Entregas valoriza a privacidade, a segurança das informações, a identificação adequada dos cooperados e a transparência na prestação dos serviços.</p>
+        <details>
+          <summary>Ler política completa</summary>
+          <div class="politica-texto">Política de Privacidade, Segurança e Termos de Responsabilidade
+A COOPEX Entregas, Cooperativa de Trabalhadores de Entregas do Rio Grande do Norte, valoriza a privacidade, a segurança das informações, a identificação adequada dos cooperados e a transparência na prestação dos serviços. Esta política apresenta regras sobre uso do site, tratamento de dados, solicitação de entregas, segurança na coleta, transporte de mercadorias e responsabilidades relacionadas aos serviços prestados por seus cooperados motofretistas.
+
+1. Coleta e uso de informações
+As informações fornecidas pelos usuários em formulários, contatos, solicitações de entrega, propostas comerciais ou envio de currículos poderão ser utilizadas pela COOPEX Entregas para fins de atendimento, análise interna, retorno ao solicitante, organização operacional, seleção de candidatos e execução dos serviços solicitados.
+
+Poderão ser coletados dados como nome, telefone, e-mail, endereço, informações da entrega, dados do remetente, dados do destinatário, observações do pedido, documentos enviados voluntariamente e demais informações necessárias à execução do serviço.
+
+2. Proteção dos dados
+A COOPEX Entregas adota medidas razoáveis para proteger as informações recebidas contra acesso não autorizado, uso indevido, perda, alteração ou divulgação indevida. As informações não serão vendidas ou compartilhadas publicamente, salvo quando necessário para a execução do serviço solicitado, cumprimento de obrigação legal, proteção dos direitos da cooperativa ou mediante autorização do titular.
+
+3. Atuação da cooperativa
+A COOPEX Entregas atua por meio de cooperados motofretistas organizados em regime cooperativo, oferecendo soluções de entrega para empresas, estabelecimentos comerciais, restaurantes, farmácias, escritórios e pessoas físicas, conforme disponibilidade, demanda e organização operacional.
+
+Os cooperados atuam conforme normas internas, orientações operacionais, estatuto, regimento, regras de segurança e demais normas aplicáveis à atividade de motofrete.
+
+4. Segurança na identificação do entregador
+A COOPEX Entregas somente se responsabiliza por coletas e entregas realizadas por cooperados devidamente acionados pela cooperativa e enviados por seus canais oficiais de atendimento, supervisão ou sistema operacional.
+
+O cliente, estabelecimento, remetente ou pessoa responsável pela guarda do produto deve conferir a identificação do entregador antes de entregar qualquer mercadoria, encomenda, documento, alimento ou produto.
+
+Os cooperados da COOPEX são orientados a atuar identificados, utilizando o fardamento padrão da cooperativa, composto por camisa azul e calça preta, além de se apresentarem de forma organizada e compatível com o serviço solicitado.
+
+Antes de liberar qualquer produto, recomendamos que o cliente, estabelecimento ou responsável confirme:
+
+se a entrega foi realmente solicitada à COOPEX pelos canais oficiais;
+o nome do entregador enviado pela cooperativa;
+se o entregador está identificado com o padrão visual da COOPEX;
+se o entregador informa corretamente o nome do cliente, estabelecimento ou destino da entrega;
+se há confirmação da solicitação junto à supervisão ou atendimento da COOPEX, em caso de dúvida.
+A COOPEX Entregas não se responsabiliza por produtos, mercadorias, documentos ou encomendas entregues a terceiros, entregadores não identificados, pessoas não enviadas oficialmente pela cooperativa ou indivíduos que se apresentem indevidamente como entregadores sem confirmação pelos canais oficiais da COOPEX.
+
+Caso o cliente, estabelecimento, colaborador ou responsável entregue o produto a pessoa diversa daquela enviada pela cooperativa, sem a devida conferência de identificação, a responsabilidade pela entrega indevida será de quem liberou o produto, não cabendo à COOPEX ressarcimento por perda, extravio, dano, desvio ou qualquer prejuízo decorrente dessa liberação.
+
+Em caso de dúvida sobre a identidade do entregador, o produto não deve ser entregue. O responsável deve entrar em contato imediatamente com a COOPEX pelos canais oficiais para confirmar o nome do cooperado designado para a coleta.
+
+5. Responsabilidade pelas informações da entrega
+As entregas são realizadas de acordo com as informações fornecidas pelo solicitante. É responsabilidade do cliente informar corretamente endereço, contato, tipo de produto, valor aproximado, necessidade de cuidado especial, dados do remetente, dados do destinatário e demais observações relevantes.
+
+A COOPEX Entregas não se responsabiliza por atrasos, insucessos na entrega, custos adicionais ou devoluções decorrentes de endereço incorreto, ausência do destinatário, telefone inválido, falta de referência, informações incompletas ou mudança de destino após o início da rota.
+
+Caso seja necessário realizar nova tentativa de entrega, retorno ao estabelecimento ou alteração de rota, poderá haver cobrança adicional conforme distância, tempo gasto e condições operacionais.
+
+6. Transporte em baú fechado, limite de peso e segurança operacional
+Por questões de segurança, padronização operacional e conformidade com as normas de trânsito, a COOPEX Entregas realiza o transporte de mercadorias, encomendas e produtos em baú devidamente fechado, sempre que o serviço exigir acondicionamento em baú.
+
+A cooperativa não autoriza o transporte com baú aberto, mal fechado, com produto para fora do compartimento, com excesso de peso, volume incompatível ou em qualquer condição que comprometa a segurança do cooperado, da mercadoria, do trânsito ou de terceiros.
+
+A Resolução CONTRAN nº 943/2022 estabelece requisitos mínimos de segurança para o transporte remunerado de cargas em motocicleta e motoneta, incluindo regras sobre dispositivos de transporte de carga, dimensões, instalação e segurança no motofrete.
+
+Para preservação da segurança e padronização operacional, a COOPEX Entregas adota como limite máximo de transporte o peso de até 30 kg, desde que o produto esteja devidamente acondicionado, caiba integralmente no baú fechado e não ultrapasse as condições seguras de transporte.
+
+Produtos que ultrapassem o peso máximo permitido pela cooperativa, que impeçam o fechamento correto do baú, que fiquem expostos para fora do compartimento ou que comprometam o equilíbrio da motocicleta poderão ser recusados pela COOPEX Entregas.
+
+O transporte de carga incompatível em motocicleta pode ser enquadrado como infração grave, com penalidade de multa e medidas administrativas cabíveis, conforme o Código de Trânsito Brasileiro e o enquadramento aplicado pela autoridade de trânsito.
+
+Caso o cliente, estabelecimento ou solicitante insista no transporte em condição inadequada, com baú aberto, excesso de peso, embalagem incompatível ou risco evidente, a COOPEX Entregas poderá recusar a coleta ou solicitar adequação do produto antes do envio.
+
+A COOPEX Entregas não se responsabiliza por danos, avarias, autuações, atrasos ou impossibilidade de entrega decorrentes de produto mal acondicionado, excesso de peso, volume incompatível, tentativa de transporte com baú aberto ou descumprimento das orientações de segurança.
+
+7. Limite de responsabilidade sobre mercadorias
+A COOPEX Entregas não se responsabiliza por pedidos, mercadorias ou encomendas cujo valor declarado ou estimado seja superior a R$ 500,00 (quinhentos reais), salvo se houver comunicação prévia, análise e autorização expressa da cooperativa antes da realização do serviço.
+
+Produtos de alto valor, documentos sensíveis, eletrônicos, joias, dinheiro, cartões, objetos frágeis ou itens de valor elevado devem ser previamente informados pelo solicitante. A ausência dessa comunicação poderá afastar a responsabilidade da cooperativa por perdas, danos ou divergências relacionadas ao conteúdo transportado.
+
+8. Produtos danificados
+Em caso de alegação de dano ao produto durante a entrega, a COOPEX Entregas realizará análise da ocorrência, podendo solicitar fotos, informações do pedido, relato do solicitante e do cooperado responsável pela entrega.
+
+O eventual ressarcimento de item danificado somente poderá ser analisado mediante devolução do produto danificado à cooperativa ou ao estabelecimento responsável, para conferência do ocorrido. Não será realizado ressarcimento sem a apresentação e devolução do item reclamado.
+
+O ressarcimento, quando cabível, observará o valor comprovado do item e as condições da ocorrência, não abrangendo lucros cessantes, danos indiretos, perda de venda, perda de oportunidade, danos morais ou prejuízos não comprovados.
+
+9. Produtos frágeis, bolos e tortas
+Produtos frágeis, sensíveis, líquidos, alimentos delicados, bolos, tortas, doces decorados, arranjos e itens semelhantes exigem embalagem adequada e comunicação prévia sobre o cuidado necessário.
+
+A COOPEX Entregas não se responsabiliza por avarias em tortas, bolos ou produtos de alta fragilidade quando houver comunicação prévia ao cliente ou estabelecimento sobre os riscos do transporte, especialmente em razão da natureza do produto, embalagem inadequada, fragilidade estrutural, calor, trepidação, deslocamento natural ou acondicionamento impróprio.
+
+Cabe ao solicitante garantir que o item esteja devidamente embalado, protegido e apto ao transporte em motocicleta, considerando as características do produto e o trajeto da entrega.
+
+10. Embalagem e acondicionamento
+A responsabilidade pela embalagem correta do produto é do solicitante ou do estabelecimento remetente. A embalagem deve ser compatível com o tipo de item, protegendo contra vazamentos, quebras, amassados, exposição ao calor, movimentação interna e demais riscos previsíveis do transporte.
+
+A COOPEX Entregas poderá recusar ou orientar a não realização de entregas quando identificar risco evidente ao produto, ao cooperado, ao destinatário ou à operação.
+
+11. Prazos e condições operacionais
+Os prazos de entrega podem variar conforme demanda, trânsito, clima, distância, disponibilidade de cooperados, condições de segurança, restrições de acesso, horários de funcionamento dos estabelecimentos e demais fatores externos.
+
+A COOPEX Entregas busca realizar os atendimentos com agilidade e organização, mas não garante horário exato de chegada quando houver situações externas que interfiram na operação.
+
+12. Itens proibidos ou restritos
+A COOPEX Entregas não realiza transporte de produtos ilícitos, perigosos, inflamáveis, armas, substâncias proibidas, dinheiro em espécie em alto valor, itens sem identificação, mercadorias sem procedência ou qualquer objeto que possa violar a legislação vigente ou oferecer risco à segurança do cooperado e de terceiros.
+
+13. Links externos
+O site da COOPEX Entregas pode conter links para WhatsApp, Instagram, Google Maps, páginas de parceiros, sistemas externos ou outros canais de atendimento. A COOPEX não se responsabiliza pelas práticas de privacidade, funcionamento, conteúdo ou segurança desses serviços externos.
+
+14. Alterações desta política
+A COOPEX Entregas poderá atualizar esta Política de Privacidade, Segurança e Termos de Responsabilidade a qualquer momento, visando adequação operacional, jurídica, tecnológica ou institucional. Recomenda-se que o usuário consulte esta página periodicamente.
+
+15. Contato
+Em caso de dúvidas, solicitações ou esclarecimentos sobre esta política, o usuário poderá entrar em contato com a COOPEX Entregas pelos canais oficiais informados no site.
+
+Ao utilizar o site, solicitar entregas, enviar informações ou contratar os serviços, o usuário declara estar ciente e de acordo com esta Política de Privacidade, Segurança e Termos de Responsabilidade.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div id="loginModal" class="modal hidden"><div class="modalbox"><h2>Acesso restrito</h2><div class="campo"><label for="senhaAdmin">Senha</label><input id="senhaAdmin" type="password" autocomplete="off" placeholder="Digite a senha"></div><div class="botoes"><button id="entrarAdmin" class="primary">Entrar</button><button id="cancelLogin" class="light">Cancelar</button></div></div></div>
 <section id="admin" class="admin wrap hidden">
   <div class="admin-head"><div><h2>Editar tabela</h2><p class="note">Escolha a origem, marque vários destinos, digite um valor e salve todos de uma vez. A volta recebe o mesmo valor automaticamente.</p></div><button id="fecharAdmin" class="danger">Sair do modo admin</button></div>
@@ -407,6 +758,72 @@ let selecionado={origem:null,destino:null};
 let origemTabelaAtual=null;
 let adminAberto=false;
 let avisoStorageMostrado=false;
+
+const ORIGEM_FIXA_KEY='coopex_origem_fixa_cliente_v1';
+let origemFixaAplicando=false;
+
+function desfixarOrigem(silencioso=true){
+  const box=$('fixarOrigem');
+  if(box) box.checked=false;
+  safeLocalStorageRemove(ORIGEM_FIXA_KEY);
+  if(!silencioso) toast('Origem fixa removida.');
+}
+function salvarOrigemFixaAtual(){
+  const box=$('fixarOrigem');
+  if(!box) return;
+  const o=campoLocal('origem');
+  if(!box.checked){
+    safeLocalStorageRemove(ORIGEM_FIXA_KEY);
+    return;
+  }
+  if(!o){
+    box.checked=false;
+    safeLocalStorageRemove(ORIGEM_FIXA_KEY);
+    alert('Escolha uma origem válida na lista antes de deixar fixa.');
+    return;
+  }
+  selecionado.origem=o;
+  $('origem').value=labelLocal(o);
+  safeLocalStorageSet(ORIGEM_FIXA_KEY, JSON.stringify({id:o.id,label:labelLocal(o),salvoEm:new Date().toISOString()}));
+  toast('Origem fixa salva neste dispositivo.');
+}
+function aplicarOrigemFixa(){
+  const box=$('fixarOrigem');
+  if(!box) return;
+  const raw=safeLocalStorageGet(ORIGEM_FIXA_KEY);
+  if(!raw) return;
+  try{
+    const data=JSON.parse(raw);
+    const l=localById(data.id);
+    if(!l){ safeLocalStorageRemove(ORIGEM_FIXA_KEY); return; }
+    origemFixaAplicando=true;
+    selecionado.origem=l;
+    $('origem').value=labelLocal(l);
+    box.checked=true;
+    origemFixaAplicando=false;
+  }catch(e){
+    safeLocalStorageRemove(ORIGEM_FIXA_KEY);
+    origemFixaAplicando=false;
+  }
+}
+function setupOrigemFixa(){
+  const box=$('fixarOrigem'), input=$('origem');
+  if(!box||!input) return;
+  aplicarOrigemFixa();
+  box.addEventListener('change', salvarOrigemFixaAtual);
+  input.addEventListener('input', ()=>{
+    if(origemFixaAplicando) return;
+    if(box.checked || safeLocalStorageGet(ORIGEM_FIXA_KEY)){
+      box.checked=false;
+      safeLocalStorageRemove(ORIGEM_FIXA_KEY);
+      toast('Origem fixa removida para permitir alteração.');
+    }
+  });
+  const trocar=$('trocar');
+  if(trocar) trocar.addEventListener('click', ()=>desfixarOrigem(true));
+  consultar();
+}
+
 
 function clone(o){return JSON.parse(JSON.stringify(o));}
 function toast(msg){let t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2600);}
@@ -676,7 +1093,7 @@ function importarArquivo(file){
  if(nome.endsWith('.xlsx')||nome.endsWith('.xls')) reader.readAsArrayBuffer(file); else reader.readAsText(file,'utf-8');
 }
 function resetar(){if(!confirm('Isso volta para os dados embutidos no HTML e limpa a memória deste navegador. Continuar?')) return; snapshotState('antes de voltar dados do HTML'); safeLocalStorageRemove(STORAGE_KEY); state=baseState(); salvarEstado(); atualizarAdmin(); consultar(); toast('Dados do HTML restaurados.');}
-function init(){const ano=new Date().getFullYear(); const at=$('anoAtualTitulo'); if(at) at.textContent=ano; const af=$('anoAtualFooter'); if(af) af.textContent=ano; bindSuggest('origem','origemSug','origem'); bindSuggest('destino','destinoSug','destino'); $('resultado').innerHTML='<div class="semvalor">Digite origem e destino</div><div class="hint">O valor aparecerá quando a rota estiver cadastrada.</div>'; $('trocar').onclick=()=>{const a=$('origem').value,b=$('destino').value,sa=selecionado.origem,sb=selecionado.destino; $('origem').value=b; $('destino').value=a; selecionado.origem=sb; selecionado.destino=sa; consultar();}; $('cancelLogin').onclick=fecharLogin; $('entrarAdmin').onclick=tentarLogin; $('senhaAdmin').addEventListener('keydown',e=>{if(e.key==='Enter') tentarLogin();}); $('fecharAdmin').onclick=fecharAdmin; $('btnSalvarRota').onclick=salvarRotaAtual; $('btnRemoverRota').onclick=removerRotaAtual; $('btnAddLocal').onclick=addLocal; $('btnBackup').onclick=backupJSON; $('btnHTML').onclick=baixarHTMLCliente; $('btnXLSX').onclick=exportarXLSX; $('btnImportar').onclick=()=>$('importFile').click(); $('btnDesfazer').onclick=restaurarUltimoHistorico; $('importFile').onchange=e=>{const f=e.target.files[0]; if(f) importarArquivo(f); e.target.value='';}; $('btnReset').onclick=resetar; $('filtroOrigens').addEventListener('input',renderOrigens); $('filtroDestinosTabela').addEventListener('input',renderTabelaOrigem); $('statusTabela').addEventListener('change',renderTabelaOrigem); $('filtroRotas').addEventListener('input',renderRotas); $('btnAbrirConsulta').onclick=usarOrigemNaConsulta; $('btnExcluirOrigem').onclick=excluirOrigemAtual; $('btnMarcarCadastrados').onclick=()=>marcarLinhas('cadastrados'); const btnMF=$('btnMarcarFaltantes'); if(btnMF) btnMF.onclick=()=>marcarLinhas('faltando'); $('btnMarcarTodosLinhas').onclick=()=>marcarLinhas('todos'); $('btnDesmarcarLinhas').onclick=()=>marcarLinhas('nenhum'); $('btnSalvarPreenchidosTabela').onclick=salvarPreenchidosTabela; $('btnValorIgualLinhas').onclick=definirMesmoValorLinhas; $('btnMassaLinhas').onclick=()=>{ $('opMassa').value='somar'; aplicarMassaLinhas(); }; $('btnMassaTabelas').onclick=()=>{ $('opMassa').value='subtrair'; aplicarMassaLinhas(); }; let adminSeq=''; document.addEventListener('keydown',e=>{const ch=(e.key||'').toLowerCase(); if(ch.length===1){adminSeq=(adminSeq+ch).slice(-11); if(adminSeq==='coopexadmin'){adminSeq=''; abrirLogin();}}}); console.log('COOPEX tabela carregada',state.locais.length,'locais',rotasComValor().length,'rotas');}
+function init(){const ano=new Date().getFullYear(); const at=$('anoAtualTitulo'); if(at) at.textContent=ano; const af=$('anoAtualFooter'); if(af) af.textContent=ano; bindSuggest('origem','origemSug','origem'); bindSuggest('destino','destinoSug','destino'); $('resultado').innerHTML='<div class="semvalor">Digite origem e destino</div><div class="hint">O valor aparecerá quando a rota estiver cadastrada.</div>'; setupOrigemFixa(); $('trocar').onclick=()=>{const a=$('origem').value,b=$('destino').value,sa=selecionado.origem,sb=selecionado.destino; $('origem').value=b; $('destino').value=a; selecionado.origem=sb; selecionado.destino=sa; consultar();}; $('cancelLogin').onclick=fecharLogin; $('entrarAdmin').onclick=tentarLogin; $('senhaAdmin').addEventListener('keydown',e=>{if(e.key==='Enter') tentarLogin();}); $('fecharAdmin').onclick=fecharAdmin; $('btnSalvarRota').onclick=salvarRotaAtual; $('btnRemoverRota').onclick=removerRotaAtual; $('btnAddLocal').onclick=addLocal; $('btnBackup').onclick=backupJSON; $('btnHTML').onclick=baixarHTMLCliente; $('btnXLSX').onclick=exportarXLSX; $('btnImportar').onclick=()=>$('importFile').click(); $('btnDesfazer').onclick=restaurarUltimoHistorico; $('importFile').onchange=e=>{const f=e.target.files[0]; if(f) importarArquivo(f); e.target.value='';}; $('btnReset').onclick=resetar; $('filtroOrigens').addEventListener('input',renderOrigens); $('filtroDestinosTabela').addEventListener('input',renderTabelaOrigem); $('statusTabela').addEventListener('change',renderTabelaOrigem); $('filtroRotas').addEventListener('input',renderRotas); $('btnAbrirConsulta').onclick=usarOrigemNaConsulta; $('btnExcluirOrigem').onclick=excluirOrigemAtual; $('btnMarcarCadastrados').onclick=()=>marcarLinhas('cadastrados'); const btnMF=$('btnMarcarFaltantes'); if(btnMF) btnMF.onclick=()=>marcarLinhas('faltando'); $('btnMarcarTodosLinhas').onclick=()=>marcarLinhas('todos'); $('btnDesmarcarLinhas').onclick=()=>marcarLinhas('nenhum'); $('btnSalvarPreenchidosTabela').onclick=salvarPreenchidosTabela; $('btnValorIgualLinhas').onclick=definirMesmoValorLinhas; $('btnMassaLinhas').onclick=()=>{ $('opMassa').value='somar'; aplicarMassaLinhas(); }; $('btnMassaTabelas').onclick=()=>{ $('opMassa').value='subtrair'; aplicarMassaLinhas(); }; let adminSeq=''; document.addEventListener('keydown',e=>{const ch=(e.key||'').toLowerCase(); if(ch.length===1){adminSeq=(adminSeq+ch).slice(-11); if(adminSeq==='coopexadmin'){adminSeq=''; abrirLogin();}}}); console.log('COOPEX tabela carregada',state.locais.length,'locais',rotasComValor().length,'rotas');}
 if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
 })();
 </script>
